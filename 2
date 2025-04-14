@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char word[] = "yellow";
+    char sub[] = "low"; // Подстрока для поиска
+    char *result = strstr(word, sub); // Ищем подстроку
+
+    if (result != NULL) {
+        printf("Результат: %s\n", result);
+    } else {
+        printf("Подстрока не найдена\n");
+    }
+
+    return 0;
+}
